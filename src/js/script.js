@@ -2,6 +2,7 @@ class Cart {
   constructor() {
     this.courses = [];
     this.length = 0;
+    this.updateCart();
   }
 
   addCourse(id) {
