@@ -20,7 +20,7 @@ function scriptsTask(){
 }
 
 function stylesTask(){
-  return src('src/css/*.css')
+  return src(['src/css/style.css', 'src/css/new.css'])
   .pipe(sourcemaps.init())
   .pipe(autoprefixer())
   .pipe(sourcemaps.write())
