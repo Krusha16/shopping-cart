@@ -1,0 +1,30 @@
+{
+  "name": "shopping-cart",
+  "version": "1.0.0",
+  "description": "shopping-cart-project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Krusha16/shopping-cart.git"
+  },
+  "keywords": [],
+  "author": "krusha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Krusha16/shopping-cart/issues"
+  },
+  "homepage": "https://github.com/Krusha16/shopping-cart#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "latest",
+    "gulp-babel": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-terser": "^2.0.0"
+  },
+  "dependencies": {}
+}
