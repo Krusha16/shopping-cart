@@ -1,0 +1,99 @@
+ls
+cd shopping-cart
+ls
+mkdir src
+git init 
+git status
+touch .gitignore
+code .
+ls
+git status
+git add . 
+git status
+git commit -m "initial commit"
+git clone https://github.com/Krusha16/shopping-cart.git
+git remote add origin https://github.com/Krusha16/shopping-cart.git
+git branch -M main
+git push -u origin main
+git status
+ls
+cd shopping-cart
+ls
+cd ../
+code .
+rm -rf shopping-cart
+ls
+git add .
+git status
+code .
+mv js src
+ls
+mv css src
+mv index.html src
+mv images src
+ls
+cd src
+ls
+cd ../
+git status
+git add .
+git status
+git commit -m "reorganize project files into src directory"
+git status
+code .
+git status
+git add . 
+git log
+git status
+git commit -m "part2 create gulp minify, concat and sourcemaps tasks for css and js, create optimize images task for all images"
+git branch color-change
+git switch color-change
+code .
+git status
+git add .
+git commit -m "change color of 3 elements in separate file that overides original css flie"
+git status
+git branch
+git switch main
+git merge color-change
+git status
+git branch
+git branch new-feature
+git switch new-feature
+code .
+git status
+git add .
+git commit -m "update script.js file to clear the default html content given in the cart"
+git status
+git switch main
+git status
+git merge new-feature
+git status
+code .
+git branch -d new-feature
+git status
+history -w history-assignment1.txt
+
+
+
+
+history of vscode terminal
+
+gulp
+npm init --yes
+npm i --save-dev gulp
+gulp
+gulp html
+gulp scripts
+gulp styles
+gulp
+npm i --save-dev gulp-sourcemaps
+gulp
+npm i --save-dev gulp-concat
+gulp
+npm install gulp-terser --save-dev
+gulp
+npm i --save-dev gulp-imagemin
+gulp
+history
+cat (Get-PSReadlineOption).HistorySavePath
