@@ -4,6 +4,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const terser = require('gulp-terser');
 const concat = require('gulp-concat');
 const imagemin = require('gulp-imagemin');
+const rename = require('gulp-rename');
 
 function htmlTask(){
   return src('src/*html')
@@ -16,6 +17,7 @@ function scriptsTask(){
   .pipe(terser())
   .pipe(sourcemaps.write())
   .pipe(concat('all.js'))
+  .pipe(rename({ extname: '.min.js' }))
   .pipe(dest('dist/js'))
 }
 
@@ -38,5 +40,4 @@ exports.html = htmlTask;
 exports.scripts = scriptsTask;
 exports.images = imagesTask;
 exports.styles = stylesTask;
-exports.images = imagesTask;
-exports.default = series(htmlTask, imagesTask,scriptsTask, stylesTask);
+exports.default = series(htmlTask, imagesTask, scriptsTask, stylesTask);
