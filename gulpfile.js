@@ -16,8 +16,8 @@ function stylesTask(){
 }
 
 function imagesTask(){
-  return src(['src/Images/*'])
-  .pipe(dest('dist/Images'))
+  return src(['src/images/*'])
+  .pipe(dest('dist/images'))
 }
 
 exports.html = htmlTask;
